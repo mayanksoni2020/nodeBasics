@@ -1,0 +1,3 @@
+{
+    "mongodbURL": "mongodb+srv://node:Mayank@2020@node.pzycn.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}

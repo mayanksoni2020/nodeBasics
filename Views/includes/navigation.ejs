@@ -1,0 +1,24 @@
+<div class="mainDiv">
+    <nav>
+        <ul>
+            <li>
+                <a href="/" class="<%- path==='/' ? 'active' : '' %>">Home</a>
+            </li>
+            <%if (isAuthenticated){ %>
+                <li>
+                    <a href="/admin/add-product" class="<%- path==='/' ? 'active' : '' %>">Add Product</a>
+                </li>
+                <% } %>
+                    <li>
+                        <a href="/auth/login" class="<%- path==='/' ? 'active' : '' %>">Login</a>
+                    </li>
+                    <%if (isAuthenticated){ %>
+                        <li>
+                            <form action="/auth/logout" method="POST">
+                                <button type="submit">Logout</button>
+                            </form>
+                        </li>
+                        <% } %>
+        </ul>
+    </nav>
+</div>

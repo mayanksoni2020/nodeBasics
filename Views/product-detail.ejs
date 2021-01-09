@@ -1,0 +1,42 @@
+<%- include('./includes/header') %>
+  <%- include('./includes/functions') %>
+
+    <body onload="getProductId('<%= prod._id %>')">
+      <%- include('./includes/navigation') %>
+
+        <h1>Product Details</h1>
+        <br />
+
+        <div class="card">
+          <h1>
+            Name:-
+            <%= prod.name %>
+          </h1>
+          <p class="price">
+            Rs.
+            <%= prod.price %>
+          </p>
+          <p>
+            Brand:-
+            <%= prod.brand %>
+          </p>
+          <p>
+            Rating:-
+            <%= prod.rating %>
+          </p>
+          <button>Add to Cart</button>
+          <br>
+          <br>
+          <!-- <form action="/admin/products/<%= prod._id %>" method="GET">
+          <button style="background: red;" type="submit"> Delete Item </button>
+        </form> -->
+          <!-- <button>
+          <a href="/products/<%= prod._id %>"> Delete </a>
+        </button> -->
+          <form action="/admin/products/<%= prod._id %>" method="GET">
+            <button onclick="retrieveProductId('<%= prod._id %>')">Delete</button>
+          </form>
+        </div>
+
+        <%- include('./includes/footer') %>
+    </body>

@@ -1,0 +1,82 @@
+.mainDiv {
+  background: black;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.mainDiv a {
+  margin-right: 5px;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  background: green;
+}
+
+.formDiv {
+  background: lightblue;
+  display: inline-block;
+  margin: 12% 39%;
+  padding: 20px 50px;
+}
+
+.formDiv h1 {
+  text-align: center;
+}
+
+.formDiv input{
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button,
+a {
+  border: none;
+  text-decoration: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+#addItem {
+  border: none;
+  padding: 10px;
+  margin: 0px 26%;
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 16px;
+}
